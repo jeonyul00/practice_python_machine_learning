@@ -57,4 +57,24 @@ print("이런것도 있네? {0} {1}".format(1, "어이없어."))
 
 print("%.2f" % 3.141592)
 
+name = 'jeon'
+age = 30
+a = f'{name} is {age+100} years old'
+print(a)
+py = 3.141592
+print(f'{py:0.2f}') # 소수점 n자리까지 표시
 
+stringA = 'abcdefg'
+print(stringA.count('g')) # g의 개수
+print(stringA.index('g')) # 없으면 error
+print(stringA.find('5')) # 없으면 -1
+print(','.join(stringA))
+
+print(stringA.upper())
+spaceSTR = "   a   "
+print(spaceSTR.strip())
+print(spaceSTR.lstrip())
+print(spaceSTR.rstrip())
+print(spaceSTR.replace(" ", "_"))
+print(stringA.split("c"))
+print(stringA.split("d"))
