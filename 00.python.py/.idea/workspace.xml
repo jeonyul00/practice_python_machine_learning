@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="42d1375c-56e2-44c9-9759-59c92858b896" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/00.hello.py" beforeDir="false" afterPath="$PROJECT_DIR$/00.hello.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +24,9 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="3G2aa0WVpywd5IMWk3NaSLeYaeQ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -35,6 +37,7 @@
     "Python.00.hello.executor": "Run",
     "Python.01.list.executor": "Run",
     "Python.02.tuple.executor": "Run",
+    "Python.dictionary.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
@@ -60,7 +63,7 @@
       <option name="presentableId" value="Default" />
       <updated>1783172176994</updated>
       <workItem from="1783172178008" duration="6008000" />
-      <workItem from="1783459382056" duration="2878000" />
+      <workItem from="1783459382056" duration="5341000" />
     </task>
     <servers />
   </component>
@@ -69,6 +72,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/00_python_py$00_hello.coverage" NAME="00.hello 커버리지 결과" MODIFIED="1783460016362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/00_python_py$dictionary.coverage" NAME="dictionary 커버리지 결과" MODIFIED="1783463189648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/00_python_py$01_list.coverage" NAME="01.list 커버리지 결과" MODIFIED="1783461238444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/00_python_py$02_tuple.coverage" NAME="02.tuple 커버리지 결과" MODIFIED="1783462262887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>

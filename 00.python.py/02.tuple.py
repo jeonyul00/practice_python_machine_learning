@@ -15,5 +15,7 @@ print(type(t5))
 # del t1[0] error
 # t1[2] = 1 error
 
-
-
+t23 = t2 + t3
+print(t23)
+t = t2 * 10
+print(t)
