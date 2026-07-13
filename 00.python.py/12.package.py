@@ -45,19 +45,36 @@ echo_test("세 번째 방법")
 
 
 print("=" * 60)
-print("4. __init__.py가 패키지의 입구 역할을 하는 모습")
+print("4. 각 __init__.py가 함수를 한 단계씩 위로 공개한다")
 import game
 
 print("game.VERSION:", game.VERSION)
 game.print_version_info()
 
-# game/__init__.py가 render_test를 미리 가져왔기 때문에
-# game.graphic.render.render_test() 대신 짧게 호출할 수 있다.
+# 원래 함수가 들어 있는 파일까지 모두 적는 방법
+game.sound.echo.echo_test("원래 전체 경로")
+game.graphic.render.render_test()
+
+# sound/__init__.py와 graphic/__init__.py가 각각 함수를 공개한 방법
+game.sound.echo_test("하위 패키지가 공개한 경로")
+game.graphic.render_test()
+
+# game/__init__.py가 두 함수를 다시 공개한 가장 짧은 방법
+game.echo_test("game이 공개한 경로")
 game.render_test()
 
 
 print("=" * 60)
-print("5. import는 같은 실행 중에는 한 번만 초기화한다")
+print("5. __all__은 import *로 공개할 이름만 정한다")
+from game import *
+
+echo_test("__all__에 들어 있어서 가져와짐")
+render_test()
+print("VERSION은 game 안에는 있지만 __all__에 없어서 *로 가져오지 않습니다.")
+
+
+print("=" * 60)
+print("6. import는 같은 실행 중에는 한 번만 초기화한다")
 print("game을 다시 import해도 초기화 문구가 또 나오지 않습니다.")
 import game  # 이미 불러온 패키지라 __init__.py를 다시 실행하지 않는다.
 
@@ -68,3 +85,4 @@ print("1) .py 파일 하나 = 모듈")
 print("2) 관련 모듈을 담은 폴더 = 패키지")
 print("3) __init__.py = 패키지를 처음 불러올 때 실행되는 입구")
 print("4) .은 현재 패키지, ..은 부모 패키지를 뜻함")
+print("5) __all__ = import *로 공개할 이름의 목록")

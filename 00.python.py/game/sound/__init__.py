@@ -1,6 +1,8 @@
-"""소리와 관련된 모듈을 모아 둔 하위 패키지."""
+"""sound 패키지가 바깥에 공개하는 기능을 정하는 파일."""
 
-# from game.sound import * 를 실행할 때 공개할 이름을 정한다.
-# 실제 코드에서는 *보다 필요한 이름을 직접 import하는 편이 명확하다.
-__all__ = ["echo"]
+# echo.py 안의 함수를 sound 패키지 바로 아래에 꺼내 놓는다.
+# game.sound.echo.echo_test() 대신 game.sound.echo_test()로 호출할 수 있다.
+from .echo import echo_test
 
+# from game.sound import *에서 공개할 이름이다.
+__all__ = ["echo_test"]
